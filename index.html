@@ -5,13 +5,109 @@
 <head>
     <title>Project 1</title>
     <base href="/">
+
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+
+
+
+<style type="text/css">
+
+	body {
+		padding-top: 50px;
+	}
+
+	.space {
+		width: 90%;
+		margin: auto;
+		padding: 500px 0;
+	}
+
+
+	/* ----- FOOTER ----- */
+	footer {
+		color: #9d9d9d;
+		background-color: #222222;
+		padding: 50px 20px 0;
+		text-align: center;
+	}
+
+	.footer-social, .footer-contact, .footer-cright {
+		margin-top: 20px;
+		padding: 10px;
+	}
+	
+	/* --- responsive design stuff --- */
+	@media screen and (min-width: 768px) {
+
+		/* ----- FOOTER ----- */
+		footer {
+			padding: 50px 50px 0;
+		}
+		.footer-social {
+			width: 50%;
+			float: right;
+			text-align: right;
+			padding-left: 5%;
+			margin: 0;
+		}
+		.footer-contact {
+			width: 50%;
+			float: left;
+			text-align: left;
+			padding-right: 5%;
+			margin: 0;
+		}
+		.footer-cright {
+			margin-top: 7.5%;
+			padding-top: 75px;
+		}
+	}
+
+
+	/* ------------ div borders ------------ */
+	.bdr {border: 2px dashed rgba(0,0,0,0.25);}
+	.rd{border-color: rgba(255,0,0,0.25);} 
+	.gr{border-color: rgba(0,255,0,0.25);} 
+	.bl{border-color: rgba(0,0,255,0.25);}  
+	.gy{border-color: rgba(125,125,125,0.25);}
+	/* ------------------------------------- */
+
+</style>
 </head>
 
 
 <body>
-    Project 1...
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="nav navbar-header">
+				<a href="/" class="navbar-brand">(NAME)</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-nav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			
+			<ul id="my-nav" class="nav navbar-nav navbar-right navbar-collapse collapse">
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Workouts</a></li>
+				<li><a href="/">Book Now</a></li>
+			</ul>
+		</div>
+	</nav>
+
+    <div ng-view></div>
+
+    <div class="space bdr gy"></div>
+
+    <footer class="bdr gy">	
+	    <div class="footer-social bdr gy">(social)</div>
+	    <div class="footer-contact bdr gy">(contact)</div>
+    	<div class="footer-cright bdr gr">(copyright)</div>
+    </footer>
 </body>
 </html>
