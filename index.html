@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Project1">
 
 
 <head>
@@ -58,18 +58,24 @@
 		margin: 4px 0 0 0;
 	}
 
-	footer .fb-sprite {background: url(img/fb-sprite.svg) no-repeat;}
-	footer .tw-sprite {background: url(img/tw-sprite.svg) no-repeat;}
-	footer .yt-sprite {background: url(img/yt-sprite.svg) no-repeat;}
-	footer .ig-sprite {background: url(img/ig-sprite.svg) no-repeat;}
 	footer .si-sprite {
 		background-size: contain;
+		background-repeat: no-repeat;
 		display: inline-block;
 		width: 60.62px;
 		height: 70px;
-		margin: 0 8px 0 8px;
+		margin: 0 8px;
 	}
+	footer .fb-sprite {background-image: url(img/fb-sprite.svg);}
+	footer .tw-sprite {background-image: url(img/tw-sprite.svg);}
+	footer .yt-sprite {background-image: url(img/yt-sprite.svg);}
+	footer .ig-sprite {background-image: url(img/ig-sprite.svg);}
 	
+	footer .fb-sprite:hover {background-image: url(img/fb-sprite2.svg);}
+	footer .tw-sprite:hover {background-image: url(img/tw-sprite2.svg);}
+	footer .yt-sprite:hover {background-image: url(img/yt-sprite2.svg);}
+	footer .ig-sprite:hover {background-image: url(img/ig-sprite2.svg);}
+
 	
 	/* --- responsive design stuff --- */
 	@media screen and (min-width: 768px) {
@@ -101,7 +107,7 @@
 
 
 	/* ------------ div borders ------------ */
-	.bdr {border: 2px dashed rgba(0,0,0,0.25);}
+	.bdr {border: 0px dashed rgba(0,0,0,0.25);}
 	.rd {border-color: rgba(255,0,0,0.25);} 
 	.gr {border-color: rgba(0,255,0,0.25);} 
 	.bl {border-color: rgba(0,0,255,0.25);}  
@@ -151,7 +157,7 @@
 	    	<p>4 Soho St, London, W1D 3DG</p> 
 	    	<p>020 7946 0777</p> 
 	    	<p>info@futuraegym.com</p> </div>
-    	<div class="footer-copyr bdr gr">© 2017 Futurae Gym</div>
+    	<div class="footer-copyr bdr gr"><p>© 2017 Futurae Gym</p></div>
     </footer>
 </body>
 </html>
