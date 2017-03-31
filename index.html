@@ -5,121 +5,22 @@
 <head>
     <title>Project 1</title>
     <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
 	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-
-
-
-<style type="text/css">
-
-	body {
-		padding-top: 50px;
-	}
-
-	/* ----- NAV ----- */
-	nav .logo {
-		background: url(img/logo.svg) left center no-repeat;
-		background-size: 35px;
-		padding-left: 40px;
-		margin-left: 5px;
-	}
-
-	.space {
-		width: 90%;
-		margin: auto;
-		padding: 500px 0;
-	}
-
-
-	/* ----- FOOTER ----- */
-	footer {
-		color: #9d9d9d;
-		background-color: #222222;
-		padding: 30px 20px 0;
-		text-align: center;
-	}
-	footer > * {
-		margin-top: 20px;
-		padding: 10px;
-	}
-	footer .social-icons {
-		font-size: 0;
-	}
-	footer h4 {
-		margin-bottom: 18px;
-		color: #aeaeae;
-	}
-	footer p {
-		margin: 4px 0 0 0;
-	}
-
-	footer .si-sprite {
-		background-size: contain;
-		background-repeat: no-repeat;
-		display: inline-block;
-		width: 60.62px;
-		height: 70px;
-		margin: 0 8px;
-	}
-	footer .fb-sprite {background-image: url(img/fb-sprite.svg);}
-	footer .tw-sprite {background-image: url(img/tw-sprite.svg);}
-	footer .yt-sprite {background-image: url(img/yt-sprite.svg);}
-	footer .ig-sprite {background-image: url(img/ig-sprite.svg);}
-	
-	footer .fb-sprite:hover {background-image: url(img/fb-sprite2.svg);}
-	footer .tw-sprite:hover {background-image: url(img/tw-sprite2.svg);}
-	footer .yt-sprite:hover {background-image: url(img/yt-sprite2.svg);}
-	footer .ig-sprite:hover {background-image: url(img/ig-sprite2.svg);}
-
-	
-	/* --- responsive design stuff --- */
-	@media screen and (min-width: 768px) {
-
-		/* ----- FOOTER ----- */
-		footer {
-			padding: 6.5% 6.5% 0;
-		}
-		.footer-social, .footer-contact {
-			width: 50%;
-			margin: 0
-		}
-		.footer-social {
-			float: right;
-			text-align: right;
-		}
-		.footer-contact {
-			float: left;
-			text-align: left;
-			padding-right: 5%;
-		}
-		.footer-copyr {
-			margin-top: 8%;
-			padding-top: 125px;
-		}
-		footer .social-icons a:first-child {margin-left: 0;}
-		footer .social-icons a:last-child {margin-right: 0;}
-	}
-
-
-	/* ------------ div borders ------------ */
-	.bdr {border: 0px dashed rgba(0,0,0,0.25);}
-	.rd {border-color: rgba(255,0,0,0.25);} 
-	.gr {border-color: rgba(0,255,0,0.25);} 
-	.bl {border-color: rgba(0,0,255,0.25);}  
-	.gy {border-color: rgba(125,125,125,0.25);}
-	/* ------------------------------------- */
-
-</style>
 </head>
 
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<!-- NAV -->
+    <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- get navbar menu to close when option clicked -->
 		<div class="container">
 			<div class="nav navbar-header">
 				<a href="/" class="navbar-brand logo">FuturaeGym</a>
@@ -142,22 +43,32 @@
 
     <div class="space bdr gy"></div>
 
-    <footer class="bdr gy">	
-	    <div class="footer-social bdr gy">
-	    	<h4>FOLLOW</h4>
-	    	<div class="social-icons">
-	    		<a href="http://www.facebook.com" target="_blank" class="si-sprite fb-sprite">Facebook</a>
-	    		<a href="http://www.twitter.com" target="_blank" class="si-sprite tw-sprite">Twitter</a>
-	    		<a href="http://www.youtube.com" target="_blank" class="si-sprite yt-sprite">YouTube</a>
-	    		<a href="http://www.instagram.com" target="_blank" class="si-sprite	 ig-sprite">Instagram</a>
-	    	</div>
-	    </div>
-	    <div class="footer-contact bdr gy">
-	    	<h4>CONTACT</h4> 
-	    	<p>4 Soho St, London, W1D 3DG</p> 
-	    	<p>020 7946 0777</p> 
-	    	<p>info@futuraegym.com</p> </div>
+    <!-- FOOTER -->
+    <footer class="bdr gy">	<!-- use bootstrap columns instead of float? -->
+	    <div class="row bdr rd">
+		    <div class="footer-social col-xs-12 col-sm-6 bdr gy">
+		    	<h4>FOLLOW</h4>
+		    	<div class="social-icons">
+		    		<a href="http://www.facebook.com" target="_blank" class="si-sprite fb-sprite">Facebook</a>
+		    		<a href="http://www.twitter.com" target="_blank" class="si-sprite tw-sprite">Twitter</a>
+		    		<a href="http://www.youtube.com" target="_blank" class="si-sprite yt-sprite">YouTube</a>
+		    		<a href="http://www.instagram.com" target="_blank" class="si-sprite	ig-sprite">Instagram</a>
+		    	</div>
+		    </div>
+		    <div class="footer-contact col-xs-12 col-sm-6 bdr gy">
+		    	<h4>CONTACT</h4> 
+		    	<p>4 Soho St, London, W1D 3DG</p> 
+		    	<p>020 7946 0777</p> 
+		    	<p>info@futuraegym.com</p> 
+		    </div>
+		</div>
     	<div class="footer-copyr bdr gr"><p>© 2017 Futurae Gym</p></div>
     </footer>
+
+<!-- angularjs -->
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+
+
 </body>
 </html>

@@ -1,0 +1,257 @@
+body {
+	padding-top: 50px;
+}
+
+.space {
+	width: 90%;
+	margin: auto;
+	padding: 200px 0;
+}
+
+
+
+/*====== NAV ======*/
+nav .logo {
+	background: url(img/logo.svg) left center no-repeat;
+	background-size: 35px;
+	padding-left: 40px;
+	margin-left: 5px;
+}
+/*=================*/
+
+
+
+/*====== FOOTER ======*/
+footer {
+	color: #9d9d9d;
+	background-color: #222222;
+	padding: 30px 20px 0;
+	text-align: center;
+}
+
+footer .social-icons {
+	font-size: 0;
+}
+
+footer h4 {
+	margin-bottom: 15px;
+	color: #aeaeae;
+}
+
+footer .si-sprite {
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 60.62px;
+	height: 70px;
+	margin: 5px 8px;
+}
+
+footer .fb-sprite {background-image: url(img/fb-sprite.svg);}
+footer .tw-sprite {background-image: url(img/tw-sprite.svg);}
+footer .yt-sprite {background-image: url(img/yt-sprite.svg);}
+footer .ig-sprite {background-image: url(img/ig-sprite.svg);}
+
+footer .fb-sprite:hover {background-image: url(img/fb-sprite2.svg);}
+footer .tw-sprite:hover {background-image: url(img/tw-sprite2.svg);}
+footer .yt-sprite:hover {background-image: url(img/yt-sprite2.svg);}
+footer .ig-sprite:hover {background-image: url(img/ig-sprite2.svg);}
+
+.footer-social, .footer-contact {
+	margin-top: 20px;
+	padding: 10px 0;
+}
+.footer-contact p {
+	margin: 10px 0 0 0;
+}
+
+.footer-copyr {
+	margin-top: 30px;
+	padding: 10px;
+}
+.footer-copyr p {
+	margin: 0;
+}
+/*======================*/
+
+
+
+/*======== HOME ========*/
+
+/*====== CAROUSEL ======*/
+#home-carousel {
+	width: 100%;
+}
+
+.carousel .item {
+	height: 330px;
+}
+.caro-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.caro-bg1 {background-image: url(img/GYMcarousel.jpg);}
+.caro-bg2 {background-image: url(img/VRcarousel.jpg);}
+.caro-bg3 {background-image: url(img/PTcarousel.jpg);}
+
+.carousel-indicators, .carousel-indicators ol {
+	bottom: 0;
+	margin-bottom: 0;
+}
+.carousel-control {
+	font-size: 40px;
+	width: 10%;
+}
+.carousel-control .icon-prev {
+	left: 30%;
+}
+.carousel-control .icon-next {
+	right: 30%;
+}
+
+#home-carousel h3 {
+	font-size: 30px;
+	margin-top: 10px;
+}
+#home-carousel p {
+	font-size: 16px;
+	margin-top: 15px;
+}
+#home-carousel .btn {
+	background-color: rgba(255,255,255,0.75);
+}
+
+.carousel-caption {
+	top: 35%;
+	bottom: inherit;
+	right: 10%;
+	left: 10%;
+	padding: 0;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5), -2px -2px 2px rgba(0,0,0,0.3);
+}
+/*======================*/
+/*======================*/
+
+
+
+/*====== responsive media queries ======*/ 
+
+
+@media screen and (min-width: 640px) {
+	/*====== HOME > CAROUSEL ======*/
+	#home-carousel h3 {
+		font-size: 35px;
+	}
+	#home-carousel p {
+		font-size: 18px;
+	}
+	/*=============================*/
+}
+
+
+@media screen and (min-width: 768px) {
+
+	/*====== FOOTER ======*/
+	footer {
+		padding: 4% 8% 0;
+	}
+	footer .si-sprite:last-child {margin-right: 0;}
+
+	.footer-social {
+		float: right;
+		text-align: right;
+	}
+	.footer-contact {
+		text-align: left;
+	}
+	.footer-copyr {
+		margin-top: 4%;
+	}
+	/*======================*/
+
+
+	/*====== HOME > CAROUSEL ======*/
+	#home-carousel h3 {
+		font-size: 55px;
+	}
+	#home-carousel p {
+		font-size: 25px;
+	}
+	#home-carousel .btn {
+		font-size: 16px;
+	}
+	.carousel .item {
+		height: 500px;
+	}
+	.carousel-control .icon-prev, .carousel-control .icon-next {
+		font-size: 55px;
+	}
+	.carousel-control .icon-prev {
+		left: 15%;
+	}
+	.carousel-control .icon-next {
+		right: 15%;
+	}
+	/*=============================*/
+}
+
+
+@media screen and (min-width: 1024px) {
+	/*====== HOME > CAROUSEL ======*/
+	#home-carousel h3 {
+		font-size: 60px;
+	}
+	#home-carousel p {
+		font-size: 28px;
+	}
+	#home-carousel .btn {
+		font-size: 20px;
+	}
+	/*=============================*/
+}
+
+
+@media screen and (min-width: 1536px) {
+	/*====== HOME > CAROUSEL ======*/
+	.carousel .item {
+		height: 600px;
+	}
+	#home-carousel h3 {
+		font-size: 75px;
+	}
+	#home-carousel p {
+		font-size: 32px;
+	}
+	/*=============================*/    
+} 
+/*======================================*/ 
+
+
+
+/*============= div borders =============*/
+.bdr {border: 0px dashed rgba(0,0,0,0.25);}
+.rd {border-color: rgba(255,0,0,0.25);} 
+.gr {border-color: rgba(0,255,0,0.25);} 
+.bl {border-color: rgba(0,0,255,0.25);}  
+.gy {border-color: rgba(125,125,125,0.25);}
+/*=======================================*/
+
+/*====== temp nav styling ======*/
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #aaa;
+}
+.navbar-inverse .navbar-toggle {
+    background-color: #f4f4f4;
+    border-color: #aaa;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #9d9d9d;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #bbb;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav > li > a:hover {
+	color: #222;
+}

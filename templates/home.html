@@ -1,0 +1,53 @@
+
+<!-- CAROUSEL -->
+<div id="home-carousel" class="carousel slide" data-ride="carousel">
+
+	<script> // initialise carousel
+		$('#home-carousel').carousel('cycle') 
+	</script>
+
+	<!-- indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+		<li data-target="#home-carousel" data-slide-to="1"></li>
+		<li data-target="#home-carousel" data-slide-to="2"></li>
+	</ol>
+
+	<!-- wrapper for slides (images are via CCS background) -->
+	<div class="carousel-inner" role="listbox">
+		<!-- slide 1 -->
+		<div class="item active caro-bg caro-bg1">
+			<div class="carousel-caption">
+				<h3>FUTURAE GYM</h3>
+				<p>A day pass includes the pool, steam room and sauna</p>
+			</div>
+		</div>
+
+		<!-- slide 2 -->
+		<div class="item caro-bg caro-bg2">
+			<div class="carousel-caption">
+				<h3>VIRTUAL REALITY WORKOUTS</h3>
+				<p>This futuristic feature is for members only</p>
+			</div>
+		</div>
+
+		<!-- slide 3 -->
+		<div class="item caro-bg caro-bg3">
+			<div class="carousel-caption">
+				<h3>GET A PERSONAL TRAINER</h3>
+				<p><a class="btn btn-default" href="/bookings" role="button">Book now</a></p>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- controls (changed 'href' to 'data-target' to prevent creating links -->
+	<a data-target="#home-carousel" class="left carousel-control" role="button" data-slide="prev">
+		<span class="icon-prev" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a data-target="#home-carousel" class="right carousel-control" role="button" data-slide="next">
+		<span class="icon-next" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>	
