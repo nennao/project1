@@ -1,4 +1,4 @@
-angular.module("Project1", ["ngRoute", "RouteControllers"]);
+angular.module("Project1", ["ngRoute", "RouteControllers", "ProjectDirective"]);
 
 angular.module("Project1").config(function($locationProvider, $routeProvider) {
 	$locationProvider.html5Mode(true);
