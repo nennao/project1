@@ -143,23 +143,14 @@ footer .ig-sprite:hover {background-image: url(img/ig-sprite2.svg);}
 	padding: 4px;
 }
 
-.hex1 .hexImg {
-	background-image: url(img/events/spinclass.png);
+.hex1 .hexagon {
+  background-image: url(img/events/spinclass.png);
 }
-.hex1 .hexTopImg, .hex1 .hexBottomImg {
-	background-image: url(img/events/spinclass.svg);
+.hex2 .hexagon {
+  background-image: url(img/events/VRspecial.png);
 }
-.hex2 .hexImg {
-	background-image: url(img/events/VRspecial.png);
-}
-.hex2 .hexTopImg, .hex2 .hexBottomImg {
-	background-image: url(img/events/VRspecial.svg);
-}
-.hex3 .hexImg {
-	background-image: url(img/events/fitnessfete.png);
-}
-.hex3 .hexTopImg, .hex3 .hexBottomImg {
-	background-image: url(img/events/fitnessfete.svg);
+.hex3 .hexagon {
+  background-image: url(img/events/fitnessfete.png);
 }
 /*======================*/
 
